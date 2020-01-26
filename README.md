@@ -30,3 +30,9 @@ homedb
 Using database homedb
 >
 ```
+
+Ne trouve pas le fichier de config car va chercher les données dans /root/.influxdb au lieu /var/lib/influxdb.
+
+Une autre tentative avec apk (apk update && apk install influxdb) ne trouve pas le package influxdb.
+
+L'utilisation de l'image officielle (docker pull influxdb) fonctionne sur Rapsberry.
